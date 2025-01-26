@@ -3815,7 +3815,17 @@ textarea.form-control-lg {
   flex-grow: 1;
   align-items: center;
 }
+.navbar-logo {
+  height: 60px;             /* Adjust the height as needed */
+  width: auto;              /* Automatically adjusts width to maintain aspect ratio */
+  object-fit: contain;      /* Prevents distortion of the image */
+}
 
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 40px;           /* Smaller size for mobile screens */
+  }
+}
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
