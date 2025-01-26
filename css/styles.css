@@ -85,7 +85,7 @@
   box-sizing: border-box;
 }
 .masthead {
-  background-image: url('../assets/Padova.jpeg'); /* Replace with your image path */
+  background-image: url('./assets/Padova.jpeg'); /* Replace with your image path */
   background-size: cover;        /* Ensure the image covers the entire section */
   background-position: center;   /* Center the image */
   background-repeat: no-repeat;  /* Prevent the image from repeating */
