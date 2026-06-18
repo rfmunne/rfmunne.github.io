@@ -155,7 +155,6 @@ p {
 
 .profile-photo {
   align-items: center;
-  aspect-ratio: 1;
   background:
     linear-gradient(135deg, rgba(23, 79, 138, 0.16), rgba(23, 79, 138, 0.04)),
     #dbe7f3;
@@ -164,6 +163,7 @@ p {
   display: flex;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 34px;
+  height: 300px;
   justify-content: center;
   letter-spacing: 0.06em;
   overflow: hidden;
@@ -173,7 +173,9 @@ p {
 .profile-photo img {
   display: block;
   height: 100%;
+  max-width: none;
   object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
