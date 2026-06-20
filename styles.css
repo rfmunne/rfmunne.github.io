@@ -155,10 +155,11 @@ p {
 
 .profile-photo {
   align-items: center;
+  aspect-ratio: 1 / 1;
   background:
     linear-gradient(135deg, rgba(23, 79, 138, 0.16), rgba(23, 79, 138, 0.04)),
     #dbe7f3;
-  border-radius: 50%;
+  border-radius: 9999px;
   color: var(--link-dark);
   display: flex;
   font-family: Georgia, "Times New Roman", serif;
@@ -175,7 +176,7 @@ p {
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center;
+  object-position: center 35%;
   width: 100%;
 }
 
@@ -677,34 +678,57 @@ footer p {
   }
 
   .profile-photo {
+    height: 220px;
     width: 220px;
   }
 }
 
 @media (max-width: 620px) {
   .page {
-    padding: 24px 18px 34px;
+    padding: 18px 20px 34px;
   }
 
   main {
-    padding-top: 30px;
+    padding-top: 22px;
   }
 
   section {
-    padding: 34px 0;
+    padding: 30px 0;
   }
 
   .hero {
-    gap: 28px;
+    gap: 22px;
   }
 
   .profile-intro {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 16px;
   }
 
   .profile-photo {
-    width: 180px;
+    height: min(48vw, 170px) !important;
+    justify-self: center;
+    width: min(48vw, 170px) !important;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.08;
+  }
+
+  .role,
+  .role-sub,
+  .email-line,
+  .hero-links a {
+    font-size: 15px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 
   .research-grid,
@@ -715,6 +739,10 @@ footer p {
   .news-card,
   .closing {
     padding: 24px;
+  }
+
+  .news-card {
+    height: 220px;
   }
 
   .news-list li,
