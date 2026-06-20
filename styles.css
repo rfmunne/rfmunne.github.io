@@ -706,9 +706,14 @@ footer p {
   }
 
   .profile-photo {
-    height: min(48vw, 170px) !important;
+    flex: 0 0 170px;
+    height: 170px !important;
     justify-self: center;
-    width: min(48vw, 170px) !important;
+    max-height: 170px;
+    max-width: 170px;
+    min-height: 170px;
+    min-width: 170px;
+    width: 170px !important;
   }
 
   h1 {
